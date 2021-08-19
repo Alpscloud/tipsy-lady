@@ -1,2 +1,40 @@
 .footer
-	background-color $footer-bg
+	position relative
+	&-line
+		display block
+		
+		img
+			display block
+			
+	&-content
+		position relative
+		z-index 1
+		margin-top -2px
+		padding 25px 0
+		
+		color $basic-white-color
+	&-text
+		max-width 370px
+			
+
+	&-logo
+		position relative
+		padding-right 85px
+		max-width 230px
+		&__img
+			width 65px
+			position absolute
+			right 0
+			bottom -20px
+			img
+				display block
+				
+	&-col__nav
+		flex 1
+		ul
+			display flex
+			justify-content space-around
+			
+			li
+				margin-right 21px
+			

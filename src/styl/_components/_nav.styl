@@ -1,9 +1,41 @@
 .nav
-	&__item
-		display inline-block
-		margin-right 15px
-		&:last-child
-			margin-right 0
-	&__link
-		display block
-		color $text-color
+	ul
+		li
+			display inline-block
+			margin-right 46px
+			&:last-child
+				margin-right 0
+				
+			&.current-menu-item
+				> a
+					color $secondary-color
+				
+		a
+			text-transform uppercase
+			font-family $BisonBold
+			color $basic-white-color
+			&:hover
+				color $secondary-color
+				
+	&-wrapper
+		position relative
+		
+		.socials
+			position absolute
+			top calc(100% + 32.5px)
+			right 0
+			z-index -1
+			
+
+		&__img
+			// position absolute
+			// horisontal-center()
+			// bottom -40px
+			width 240px
+			flex none
+			display none
+			transition all .23s ease-in-out
+			transition-delay .23s
+			transform translateY(30px)
+			opacity 0
+			margin-top 40px

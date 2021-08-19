@@ -1,0 +1,47 @@
+.socials
+	font-size 0
+	white-space nowrap
+	&-item
+		display inline-block
+		margin-right 10px
+		&:last-child
+			margin-right 0
+			
+		&__link
+			display block
+			width 56px
+			height 68px
+			background rgb(241,211,15)
+			background -moz-linear-gradient(0deg, rgba(241,211,15,1) 0%, rgba(222,167,27,1) 100%)
+			background -webkit-linear-gradient(0deg, rgba(241,211,15,1) 0%, rgba(222,167,27,1) 100%)
+			background linear-gradient(0deg, rgba(241,211,15,1) 0%, rgba(222,167,27,1) 100%)
+			position relative
+			clip-path polygon(0 0, 100% 0, 100% 100%, 0 84%)
+			&--ic
+				display inline-block
+				position absolute
+				position-center()
+				background-position 50% 50%
+				background-repeat no-repeat
+				background-size contain
+				width 20px
+				height 20px
+				transition all .17s ease-in-out
+				
+			&:hover
+				span
+					opacity .5
+					
+
+.accent-heading
+	text-align center
+	display inline-flex
+	align-items center
+	justify-content center
+	text-transform uppercase
+	background-color $accent-color
+	color $basic-white-color
+	text-shadow 2px 2px 0 rgba($basic-black-color, .19)
+	line-height 1
+	font 28px $BisonBold
+	padding 5px 34px

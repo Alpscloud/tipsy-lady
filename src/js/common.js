@@ -18,4 +18,13 @@ $(document).ready(function() {
 	});
 
 
+	$('.js-open-mobile-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+		$('html').toggleClass('is-fixed');
+		$('.js-mobile-menu').toggleClass('is-opened');
+	});
+
+
 });

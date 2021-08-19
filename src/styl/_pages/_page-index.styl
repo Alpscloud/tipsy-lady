@@ -1,0 +1,207 @@
+.sect__promo
+	position relative
+	background-size 0 0
+	padding-top 20px
+	&:before
+		pseudo()
+		position absolute
+		fullSize()
+		bg(50%, 50%)
+		background-image inherit
+		height 600px
+		z-index -1
+		
+.promo-bg
+	height 600px
+	position absolute
+	z-index -1
+	top 0
+	left 0
+	width 100%
+	overflow hidden
+	&__woman
+		position relative
+		&--img
+			width 550px
+			
+	
+	&__line
+		position absolute
+		z-index 10
+		bottom 0
+		left 0
+		width 100%
+		height 190px
+		display flex
+		align-items flex-end
+		margin-bottom -1px
+		img
+			display block
+			height 100%
+			width auto
+	
+	
+
+.promo-block
+	display flex
+	flex-wrap nowrap
+	&__title
+		width 320px
+		padding-top 55px
+		&--text
+			margin-bottom 55px
+
+		
+		.event-card
+			max-width 250px	
+	&__product
+		width 300px
+		display flex
+		align-items flex-end
+		
+	&__img
+		flex 1
+		margin 0 20px
+		position relative
+		
+		&:before
+			pseudo()
+			position absolute
+			top 0
+			left 0
+			z-index -1
+			width 520px
+			height 215px
+			background url('../img/decors/circles.svg') 50% 50% no-repeat / contain
+			
+		img
+			display block
+			
+		.event-card
+			display none
+			
+		&--product
+			position relative
+			
+		&--text
+			display inline-block
+			position absolute
+			left 50%
+			bottom 12%
+			transform translateX(-50%) rotate(-5deg)
+			font-size 60px
+			color $basic-white-color
+			white-space nowrap
+			text-shadow 0 1px 0px $title-color, 1px 0 0px $title-color, 1px 2px 0 $title-color, 2px 1px 0 $title-color, 2px 3px 0 $title-color, 3px 2px 0 $title-color, 3px 4px 0 $title-color, 4px 3px 0 $title-color, 4px 5px 0 $title-color, 5px 4px 0 $title-color, 5px 6px 0 $title-color
+	
+.title
+	font-size 64px
+	color $title-color 
+	line-height 1
+	margin-bottom 15px
+	
+.subtitle
+	color $basic-white-color
+	text-transform uppercase
+	font 64px $BisonBold
+	line-height 1
+	text-shadow 3px 3px 0 rgba($basic-black-color, .19)
+	span
+		display block
+		font-size 140px
+		text-shadow 6px 4px 0 rgba($basic-black-color, .19)
+		
+
+
+
+// Product cards
+.sect__products
+	padding 80px 0 20px
+	
+.product-card
+	position relative
+	&.--fruity-color
+		.product-card__title
+			background-color $fruity-color
+			
+		.btn
+			background-color $fruity-dark-color
+			
+	&.--fresh-color
+		.product-card__title
+			background-color $fresh-color
+			
+		.btn
+			background-color $fresh-dark-color
+			
+
+	&.--mint-color
+		.product-card__title
+			background-color $mint-color
+			
+		.btn
+			background-color $mint-dark-color
+			
+
+
+	&__label
+		position absolute
+		top 0
+		right 0
+		z-index 1
+		width 120px
+		height 120px
+		img
+			@extends .content-img
+			
+
+		
+	&__wrapper
+		padding 0 30px 60px
+		
+	&__img
+		padding-top 100%
+		display flex
+		align-items flex-end
+		position relative
+		img
+			@extends .content-img
+			transform translateY(-50%)
+			left 0
+			
+	&__description
+		position relative
+		padding-left 75px
+		margin-top -35px
+		z-index 1
+		
+	&__title
+		display inline-flex
+		align-items center
+		justify-content center
+		white-space nowrap
+		text-align center
+		font 42px $BisonBold
+		color $basic-white-color
+		line-height 1
+		padding 8px 20px
+		background-color orange
+		min-width 220px
+		text-shadow 2px 2px 0 rgba($basic-black-color, .19)
+			
+		
+.products-cards__row
+	margin-left -30px
+	margin-right -30px
+	
+
+// Event card
+.event-card
+	&__img
+		padding-top 100%
+		display block
+		
+	&__content
+		background-color $accent-color
+		padding 20px
+		

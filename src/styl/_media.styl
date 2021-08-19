@@ -9,3 +9,297 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(1200px)
+	// Promo
+	.promo-block
+		flex-wrap wrap
+		&__product
+			width 100%
+			margin-top 60px
+			justify-content center
+			display block
+			
+			.product-card
+				width 50%
+				margin 0 auto
+				&__description 
+					text-align left
+						
+		&__img
+			max-width 530px
+			
+	.promo-bg__woman--img
+		margin-right -100px
+
++max-screen(1050px)
+
+	// Header
+	.nav
+		ul
+			li
+				margin-right 26px
+				
+
+	// Products cards
+	.product-card
+		&__wrapper
+			width 50%
+			
+
+
+	// Promo
+	.title
+		font-size 50px
+		margin-bottom 10px
+		
+	.subtitle
+		font-size 54px
+		span
+			font-size 120px
+			
+	.promo-block__title
+		width 280px
+		
+	.promo-block
+		&__img
+			display flex
+			align-items flex-end
+				
+
+				
+
++max-screen(992px)
+	// Footer
+	.footer
+		&-line
+			img
+				height 95px
+				object-fit cover
+		&__row
+			flex-wrap wrap
+			
+		&-col
+			width 100%
+			flex none
+			text-align center
+			margin-bottom 40px
+			
+			&__text
+				order 3
+				margin-bottom 0
+			&__nav
+				order 2
+				ul
+					display block
+					li
+						display block
+						margin-right 0
+						margin-bottom 25px
+						&:last-child
+							margin-bottom 0
+			&__logo
+				order 1
+				
+		&-logo
+			margin 0 auto
+			padding-right 0
+			width 150px
+			&__img
+				right auto
+				left 100%
+				margin-left 20px
+				width 50px
+				bottom 0
+		&-text
+			margin 0 auto
+			max-width 260px
+			p
+				margin-bottom 25px
+				&:last-child
+					margin-bottom 0
+				
+	//promo
+	.promo-block__img
+		
+		padding-top 0
+	.promo-bg
+		&__woman
+			&--img
+				width 500px
+				margin-right -130px
+
++max-screen(767px)
+	// Header
+	.header
+		height 55px
+		display flex
+		align-items center
+		padding 8px 0
+		position fixed
+		top 0
+		left 0
+		width 100%
+		z-index 15
+		
+		&__row
+			justify-content flex-end
+		
+		.logo
+			position absolute
+			position-center()
+			img
+				max-width 100px
+				
+
+		.nav
+			ul
+				text-align center
+				li
+					display block
+					margin-right 0
+					margin-bottom 30px
+					&:last-child
+						margin-bottom 0
+		
+	.nav-wrapper
+		position fixed
+		top 55px
+		left 0
+		width 100%
+		height calc(100vh+55px)
+		overflow-y auto
+		background-color $mobile-menu-bg
+		padding 110px 20px 0
+		opacity 0
+		visibility hidden
+		pointer-events none
+		transition all .23s ease-in-out
+		display flex
+		flex-direction column
+		justify-content space-between
+		align-items center
+		&.is-opened
+			opacity 1
+			visibility visible
+			pointer-events auto
+			.nav-wrapper__img
+				transform translateY(0)
+				opacity 1
+		
+		.socials
+			position fixed
+			top 55px
+			horisontal-center()
+			right auto
+			z-index 1
+			
+		.nav-wrapper__img
+			display block
+			
+	.socials-item__link
+		width 50px
+		height 56px
+		
+	
+					
+
+	.btn-hamburger
+		display inline-block
+		
+	// products card
+	.product-card
+		&__wrapper
+			width 100%
+			padding-bottom 0
+			margin-bottom 100px
+			&:last-child
+				margin-bottom 0
+				
+
+	.promo-block__product
+		.product-card
+			width 100%
+				
+
++max-screen(700px)
+	// Promo
+	.sect__promo
+		padding-top 25px
+	.promo-bg
+		height 450px
+		display flex
+		align-items flex-end
+		&__line
+			height 90px
+			img
+				width auto
+			
+		&__woman
+			width 100%
+			&--img
+				width 400px
+				margin-right -40px
+	
+	.promo-block
+		&__img
+			max-width 100%
+			flex none
+			margin-left 0
+			margin-right 0
+			margin-top -35px
+			display block
+			&:before
+				display none
+				
+			.event-card
+				display block
+				margin-top 45px
+				
+			&--text
+				font-size 50px
+				
+		&__title
+			position relative
+			z-index 2
+			.event-card
+				display none
+			&--text
+				margin-bottom 0
+				
+
+	.title
+		font-size 39px
+		
+	.subtitle
+		font-size 39px
+		span
+			font-size 85px
+
++max-screen(500px)
+	.promo-bg
+		&__woman
+			&--img
+				width 400px
+				margin-right -100px				
+
++max-screen(460px)
+	// products card
+	.product-card
+		&__label
+			display none
+			
+		&__description
+			padding-left 20px
+			
+		&__title
+			font-size 34px
+
+
++max-screen(420px)
+	.promo-bg
+		&__woman
+			&--img
+				width 360px
+				margin-right -100px		
+	
+
