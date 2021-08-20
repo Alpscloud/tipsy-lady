@@ -5,15 +5,40 @@
 	font 19px $BisonBold
 	color $basic-white-color
 	background-color $dark-accent-color
-	padding 7px 35px
+	padding 7px 15px
+	width 100%
+	max-width 150px
+	text-shadow 1px 1px 0 rgba($basic-black-color, .19)
 	
 	&:hover
 		background-color $accent-color !important
 		
 	&-wide
 		width 100%
+		max-width 100%
 		padding-left 15px
 		padding-right 15px
+		
+	&-accent
+		background-color $accent-color
+		&:hover
+			background-color $dark-accent-color !important
+			
+	&-lg
+		width 100%
+		max-width 140px
+		padding 19px 15px
+		font-size 26px
+		
+		
+	&-huge
+		font-size 26px
+		padding-top 20px
+		padding-bottom 20px
+		
+		
+	&-dark
+		background-color $dark-btn-bg
 		
 	&-close
 		display inline-block

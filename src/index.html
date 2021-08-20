@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Add is-fixed class by default to homepage -->
 <html lang="en">
 <head>
 	<title>Tipsy Lady</title>
@@ -34,8 +35,83 @@
 	<![endif]-->
 </head><body>
 	
+
+	<div class="age-checker bg" style="background-image: url('img/backgrounds/promo-bg.png');">
+	<style>
+
+		.age-checker {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1000;
+			padding: 40px;
+		}
+		.age-checker__title {
+			text-transform: uppercase;
+			text-align: center;
+			font: 80px 'Bison-Bold', Arial, sans-serif;
+			line-height: 1;
+			margin-bottom: 130px;
+			position: relative;
+			z-index: 1;
+		}
+		.age-checker__title:before {
+			position: absolute;
+			width: 277px;
+			height: 318px;
+			background: url("img/21.svg") 50% 50% no-repeat/contain;
+			z-index: -1;
+			margin-top: -20px;
+		}
+		.age-checker__btns {white-space: nowrap;}
+
+		.age-checker__btns .btn {
+			margin-right: 30px;
+		}
+		.age-checker__btns .btn:last-child {
+			margin-right: 0;
+		}
+
+		@media only screen and (max-width: 620px) {
+			.age-checker__title {
+				font-size: 51px;
+				margin-bottom: 80px;
+			}
+
+			.age-checker__title:before {
+				width: 181px;
+				height: 208px;
+			}
+
+			.age-checker__btns .btn {
+				margin-right: 20px;
+			}
+
+			.btn-lg {
+				font-size: 17px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				max-width: 90px;
+			}
+		}
+
+	</style>
+
+	<div class="age-checker__block text-center basic-white-color">
+		<p class="age-checker__title">Are you already<br>21 years old?</p>
+
+		<div class="age-checker__btns">
+			<button class="btn btn-lg btn-dark js-accept-age-btn" type="btn">yes</button>
+			<button class="btn btn-lg btn-dark js-cancel-age-btn" type="btn">No</button>
+		</div>
+	</div>
+</div>
 	<!-- CONTENT WRAPPER -->
-	<div class="content__wrapper">
+	<div class="content__wrapper is-homepage">
+
+
 
 		<!-- Header -->
 		<header class="header accent-gradient-bg">
@@ -52,8 +128,8 @@
 		<li><a href="page-catalog.html">Products & Drinks</a></li>
 		<li><a href="page-events.html">Promotions & events</a></li>
 		<li><a href="page-about.html">About</a></li>
-		<li><a href="page-shop.html">Shop</a></li>
-		<li><a href="page-contact.html">Contact</a></li>
+		<li><a href="page-catalog.html">Shop</a></li>
+		<li><a href="page-contacts.html">Contact</a></li>
 	</ul>
 </nav>
 				<!-- //NAV -->
@@ -106,6 +182,8 @@
 				<div class="promo-bg bg" style="background-image: url('img/backgrounds/promo-bg.png');">
 					<div class="promo-bg__line">
 						<img src="img/decors/noindex_promo-line.svg" alt="">
+						
+
 					</div>
 
 					<div class="promo-bg__woman">
@@ -148,7 +226,10 @@
 						<div class="promo-block__img">
 							<div class="promo-block__img--product">
 								<img src="img/tipsy.png" alt="">
-								<span class="promo-block__img--text">Refreshing taste</span>
+								<div class="promo-block__img--product_text">
+									<img src="img/refreshing.svg" alt="Refreshing taste">
+								</div>
+								
 							</div>
 
 							<article class="event-card">
@@ -191,9 +272,60 @@
 
 
 			<section class="sect__products">
-				<h2 class="w3c">Our products</h2>
-				<div class="container">
-					<div class="products-cards">
+				
+
+				<div class="products-cards__entering aqua-decor">
+					<div class="container">
+						<div class="row align-horisontal-between row-nowrap products-cards__entering--row">
+							<div class="products-cards__entering--title_col">
+								<div class="products-cards__entering--title_text">
+									<h2 class="products-cards__entering--title"><span>Our</span>Drinks list</h2>
+									<h3 class="products-cards__entering--subtitle">Find the perfect mix</h3>
+								</div>
+
+								<div class="products-cards__entering--img">
+									<img src="img/woman.png" alt="">
+								</div>
+
+								<div class="products-cards__entering--vacation">
+									<img src="img/vacation_drink.svg" alt="Vacation drink">
+								</div>
+							</div>
+							<!-- //title col -->
+
+							<div class="twitter-card__col">
+								<div class="twitter-card text-right">
+									<div class="twitter-card__header">
+										<div class="accent-heading">
+											<span>twitter feed</span>
+											<span class="accent-heading__ic" style="background-image: url('img/icons/svg/noindex_twitter.svg');"></span>
+										</div>
+										<div class="twitter-card__content ">
+											<p>Come along and get Tipsy with<br>our Caribbean inspired cocktails.</p>
+											<p>Just chill and sip!</p>
+										</div>
+										<a href="#" rel="nofollow" target="_blank" class="btn btn-accent">follow on twitter</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!-- //container -->
+
+					<!-- Lines -->
+
+					<div class="aqua-decor__line aqua-decor__line--top">
+						<img src="img/decors/noindex_drinks-line-top.svg" alt="">
+					</div>
+					<div class="aqua-decor__line aqua-decor__line--bottom">
+						<img src="img/decors/noindex_drinks-line-bottom.svg" alt="">
+					</div>
+				</div>
+
+				<div class="products-cards">
+					<div class="container">
+						
 						<div class="row align-horisontal-center products-cards__row">
 							<article class="product-card__wrapper col-w-33">
 								<div class="product-card --fruity-color">
@@ -249,9 +381,10 @@
 							</article>
 							<!-- // card product -->
 						</div>
+
 					</div>
+					<!-- //container -->
 				</div>
-				<!-- //container -->
 			</section>
 		</main>
 		<!-- //Main -->
@@ -301,15 +434,15 @@
 </footer>
 		<!-- //Footer -->
 
+
+		
+
 	</div>
 	<!-- //CONTENT WRAPPER -->
 
 	<!-- jQuery IF NEEDED-->
 <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<!-- Google map -->
-<!-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script> -->
-<!-- All libs scripts -->
-<script src="js/libs.min.js"></script>
+
 <!-- Main file with scripts -->
 <script src="js/common.min.js"></script>
 </body>

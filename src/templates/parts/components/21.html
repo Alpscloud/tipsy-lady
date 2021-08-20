@@ -1,0 +1,72 @@
+<div class="age-checker bg" style="background-image: url('img/backgrounds/promo-bg.png');">
+	<style>
+
+		.age-checker {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1000;
+			padding: 40px;
+		}
+		.age-checker__title {
+			text-transform: uppercase;
+			text-align: center;
+			font: 80px 'Bison-Bold', Arial, sans-serif;
+			line-height: 1;
+			margin-bottom: 130px;
+			position: relative;
+			z-index: 1;
+		}
+		.age-checker__title:before {
+			position: absolute;
+			width: 277px;
+			height: 318px;
+			background: url("img/21.svg") 50% 50% no-repeat/contain;
+			z-index: -1;
+			margin-top: -20px;
+		}
+		.age-checker__btns {white-space: nowrap;}
+
+		.age-checker__btns .btn {
+			margin-right: 30px;
+		}
+		.age-checker__btns .btn:last-child {
+			margin-right: 0;
+		}
+
+		@media only screen and (max-width: 620px) {
+			.age-checker__title {
+				font-size: 51px;
+				margin-bottom: 80px;
+			}
+
+			.age-checker__title:before {
+				width: 181px;
+				height: 208px;
+			}
+
+			.age-checker__btns .btn {
+				margin-right: 20px;
+			}
+
+			.btn-lg {
+				font-size: 17px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				max-width: 90px;
+			}
+		}
+
+	</style>
+
+	<div class="age-checker__block text-center basic-white-color">
+		<p class="age-checker__title">Are you already<br>21 years old?</p>
+
+		<div class="age-checker__btns">
+			<button class="btn btn-lg btn-dark js-accept-age-btn" type="btn">yes</button>
+			<button class="btn btn-lg btn-dark js-cancel-age-btn" type="btn">No</button>
+		</div>
+	</div>
+</div>

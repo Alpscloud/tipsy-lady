@@ -9,6 +9,37 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(1800px)
+	.sect__about-text
+		&--top
+			background-position top -90px left -300px
+		&--bottom
+			background-position bottom 80px right -300px
+
++max-screen(1365px)
+	// Prmo
+	.promo-bg__line
+		height 145px
+		display flex
+		justify-content flex-end
+		img
+			height 100%
+			width auto
+			
+	// Drinks
+	.aqua-decor
+		&__line
+			height 140px
+			display flex
+			&--top
+				justify-content flex-start
+			&--bottom
+				justify-content flex-end
+			img
+				height 100%
+				width auto
+				flex none
+				
 +max-screen(1200px)
 	// Promo
 	.promo-block
@@ -30,6 +61,23 @@
 			
 	.promo-bg__woman--img
 		margin-right -100px
+		
+	// Events
+	.event-coming-soon
+		max-width 600px
+		
+
+	.our-drinks-imgs__woman
+		left -80px
+		
+	.sect__about-text
+
+		&--top
+			background-size 450px
+			background-position top -90px left 0
+		&--bottom
+			background-size 350px
+			background-position top right
 
 +max-screen(1050px)
 
@@ -64,11 +112,9 @@
 		&__img
 			display flex
 			align-items flex-end
-				
+	
 
-				
 
-+max-screen(992px)
 	// Footer
 	.footer
 		&-line
@@ -117,6 +163,11 @@
 				margin-bottom 25px
 				&:last-child
 					margin-bottom 0
+
+				
+
++max-screen(992px)
+	
 				
 	//promo
 	.promo-block__img
@@ -127,8 +178,92 @@
 			&--img
 				width 500px
 				margin-right -130px
+				
+
+	.sect__promo
+		padding-bottom 40px
+		
+	// Drinks
+	.products-cards
+		&__entering
+			&--title
+				font-size 120px
+				span
+					font-size 100px
+					
+			&--subtitle
+				font-size 50px
+				
+			&--img
+				right -100px
+				
+	// Events
+	.sect__events
+		padding-bottom 40px
+		
+	.event-coming-soon
+		max-width 500px
+		&__title
+			font-size 100px
+			margin-left -38px
+			
+
+	// Contacts
+	.contacts-img:before
+		width 350px
+		height 340px
+		
+	.page-title-lg
+		font-size 120px
+		
+
+	// Catalog
+	.product-content
+		margin-left 40px
+		
+	.product:nth-child(even) .product-content
+		margin-right 40px
+		
+
+	// About
+	.our-drinks-imgs
+		height 800px
+		&__woman
+			left auto
+			horisontal-center()
+			width 650px
+		&__jars
+			right auto
+			width 540px
+			height 500px
+			horisontal-center()
+			align-items center
+			bottom -250px
+			img
+				
+				&:nth-child(2)
+					margin-bottom 0
+				&:nth-child(3)
+					margin-bottom 0
+					
+				&:first-child,
+				&:last-child
+					width 170px
+					
+	.sect__about-text--bottom
+		padding-top 300px
+		background-position bottom right
+			
+			
+		
 
 +max-screen(767px)
+	.gutters
+		padding 110px 0 50px
+		
+	.page-title
+		font-size 68px
+		line-height 1
 	// Header
 	.header
 		height 55px
@@ -219,7 +354,90 @@
 	.promo-block__product
 		.product-card
 			width 100%
+			
+
+	// Event
+	.grey-decor-bg
+		background-size auto
+		
+	
+	.event-coming-soon
+		max-width 100%
+		padding-left 20px
+		padding-right 20px
+		&__img
+			@extends .thumbnail
+			padding-top 146%
+		&__title
+			top 0
+			left 0
+			margin-left 0
+			right 0
+			bottom 0
+			transform none
+			text-align center
+			font-size 90px
+			span
+				position absolute
+				horisontal-center()
+				&:first-child
+					top -50px
+				&:last-child
+					bottom -40px
+					
+
+	// Contacts
+	.sect__contacts
+		padding-top 120px
+		padding-bottom 40px
+		
+	.page-title
+		font-size 68px
+		
+	.contacts
+		&__row
+			flex-wrap wrap
+			
+		&-form
+			max-width 100%
+			&__col
+				max-width 100%
+				width 100%
+				text-align center
+				padding-top 0
 				
+		.page-title
+			margin-bottom 20px
+			text-align left
+			
+		&__text
+			margin-top 50px
+			font-size 14px
+			h2,h3,h4,h5,h6
+				font-size 22px
+				margin-bottom 20px
+			p
+				margin-bottom 20px
+			
+		&-img
+			&:before
+				width 450px
+				height 440px
+			&__col
+				width 100%
+				flex none
+				margin-top 45px
+	
+
+	.page-about
+		padding-top 0
+		
+	.sect__about-text--top
+		padding-top 115px
+		
+
+	.sect__about-text--bottom
+		padding-top 280px
 
 +max-screen(700px)
 	// Promo
@@ -274,6 +492,97 @@
 		font-size 39px
 		span
 			font-size 85px
+			
+	.sect__promo
+		padding-bottom 100px
+	// Drinks
+	.products-cards
+		&__entering
+			&--row
+				flex-wrap wrap
+				
+			&--title
+				&_col
+					order 2
+					flex none
+					width 100%
+					min-height 530px
+					padding-bottom 140px
+					
+				&_text
+					position absolute
+					left 0
+					
+			&--img
+				width 500px
+				right auto
+				horisontal-center()
+					
+			&--vacation
+				left 50%
+				horisontal-center()
+				bottom -80px
+				width 200px
+				height 200px
+				margin-left 0
+	.twitter-card
+		&__col
+			order 1
+			padding-top 0
+			position relative
+			z-index 4
+			margin 0 auto
+			margin-bottom 140px
+	
+
+	.aqua-decor__line
+		height 110px
+		
+	.products-cards
+		padding-top 170px
+		
+	.products__title
+		margin-bottom 70px
+		
+	.product
+		flex-direction column
+		margin-bottom 80px
+		&:last-child
+			margin-bottom 0
+		&:nth-child(even)
+			flex-direction column
+			.product-content
+				margin-right 0
+			
+		&-content
+			margin-left 0
+			margin-right 0
+			text-align center
+			
+		&-img
+			margin-bottom 25px
+			
+	.product-bg
+		background-image url('../img/backgrounds/product-bg-mobile.jpg')
+		background-position top center
+		background-size 100% auto
+
++max-screen(550px)
+	.our-drinks-imgs
+		height 530px
+		&__woman
+			width 440px
+			
+		&__jars
+			width 100%
+			height auto
+			bottom -170px
+			img
+				width 40% 
+				&:first-child,
+				&:last-child
+					width 30%
+
 
 +max-screen(500px)
 	.promo-bg
@@ -293,6 +602,69 @@
 			
 		&__title
 			font-size 34px
+			
+
+	.twitter-card__col
+		margin-bottom 90px
+		
+	.products-cards__entering
+		&--img
+			width 410px
+			bottom 50px
+			
+		&--title
+			font-size 72px
+			span
+				font-size 54px
+				
+		&--subtitle
+			font-size 33px
+			
+
+	.contacts-img
+		max-width 220px
+		&:before
+			width 250px
+			height 240px
+			
+
+	.product
+		font-size 17px
+		
+		&-img
+			padding 25px
+			width 290px
+			height 290px
+			flex none
+			img
+				max-width 210px
+				max-height 210px
+			
+		&-title
+			font-size 47px
+			
+
+	.sect__about-text
+		&--top
+			background-size 310px
+			background-position top left
+		&--bottom
+			background-size 350px
+			background-position bottom right -210px
+			
+		
+			
+	.page-about
+		font-szie 17px
+		text-align center
+		
+		.page-title
+			margin-bottom 40px
+		
+	.content
+		p
+			margin-bottom 20px
+		
 
 
 +max-screen(420px)
@@ -301,5 +673,17 @@
 			&--img
 				width 360px
 				margin-right -100px		
-	
+				
+
+	.promo-block__img--product_text
+		width 240px
+		
+
+	.our-drinks-imgs
+		height 490px
+		&__woman
+			width 400px
+			
+	.sect__about-text--bottom
+		padding-top 220px
 

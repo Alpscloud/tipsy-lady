@@ -1,0 +1,60 @@
+.products__title
+	margin-bottom 75px
+
+.product
+	display flex
+	align-items center
+	flex-wrap nowrap
+	
+	&.--fresh-color
+		.product-title
+			color $fresh-color
+			
+	&.--fruity-color
+		.product-title
+			color $fruity-color
+
+			
+	&.--mint-color
+		.product-title
+			color $mint-color
+			
+	&:nth-child(even)
+		flex-direction row-reverse
+		
+		.product-content
+			margin-left 0
+			margin-right 85px
+			
+		.product-img
+			&:before
+				transform scaleY(-1)
+	
+	&-img
+		position relative
+		flex-col-center()
+		flex 1
+		width 100%
+		max-width 400px
+		padding 55px
+		&:before
+			pseudo()
+			top 0
+			left 0
+			right 0
+			bottom 0
+			background url('../img/decors/circle.svg') 50% 50% no-repeat / contain
+			position absolute
+		img
+			@extends .content-img
+			
+	&-content
+		margin-left 85px
+		max-width 350px
+		
+	&-title
+		text-transform uppercase
+		font 57px $BisonBold
+		line-height 1
+		margin-bottom 25px
+		

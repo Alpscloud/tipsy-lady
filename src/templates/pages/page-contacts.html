@@ -1,0 +1,87 @@
+{% include '../parts/head.html' %}
+<body>
+	
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper is-opened">
+
+
+
+		<!-- Header -->
+		{% include '../parts/sections/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<section class="sect__contacts grey-decor-bg">
+				<div class="container">
+
+					<div class="contacts">
+						<div class="row align-vertical-start align-horisontal-between contacts__row row-nowrap">
+							<div class="contacts-form__col">
+								<h1 class="page-title-lg page-title">Contact</h1>
+
+								<div class="contacts-form">
+									<form>
+										<div class="form-group">
+											<label  class="form-group__label">
+												<input type="text" class="form-input js-required-input" name="name" autocomplete="off">
+												<span class="form-group__label--text">Name *</span>
+												<span class="form-group__error">Please, fill this field.</span>
+											</label>
+										</div>
+										<div class="form-group">
+											<label  class="form-group__label">
+												<input type="email" class="form-input js-required-input" name="email" autocomplete="off">
+												<span class="form-group__label--text">Email *</span>
+												<span class="form-group__error">Please, fill this field.</span>
+											</label>
+										</div>
+										<div class="form-group">
+											<label  class="form-group__label">
+												<input type="tel" class="form-input" name="phone" autocomplete="off">
+												<span class="form-group__label--text">Phone number</span>
+											</label>
+										</div>
+										<button class="btn btn-wide btn-accent btn-huge" type="submit">send contact</button>
+									</form>
+								</div>
+
+
+								<div class="contacts-form__text">
+									<h2>Looking to get tipsy?</h2>
+									<p>Register here to get updates on retailers near you</p>
+									<p>Distributors looking to buy, contact us directly for more information</p>
+									<p><a href="mailto:tipsyladycocktails@gmail.com">tipsyladycocktails@gmail.com</a></p>
+								</div>
+							</div>
+
+							<div class="contacts-img__col">
+								<div class="contacts-img">
+									<img src="img/tipsy.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- //container -->
+			</section>
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/footer.html' %}
+		<!-- //Footer -->
+
+
+		
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

@@ -35,10 +35,14 @@
 		display flex
 		align-items flex-end
 		margin-bottom -1px
+		svg
+			display block
+			width 100%
+			
 		img
 			display block
-			height 100%
-			width auto
+	
+			width 100%
 	
 	
 
@@ -82,6 +86,15 @@
 			
 		&--product
 			position relative
+			&_text
+				position absolute
+				left 50%
+				bottom 10%
+				transform translateX(-50%)
+				width 390px
+				img
+					display block
+					width 100%
 			
 		&--text
 			display inline-block
@@ -115,8 +128,89 @@
 
 
 // Product cards
-.sect__products
+
+
+.products-cards
 	padding 80px 0 20px
+	&__entering 
+		
+		position relative
+		
+		&--title
+			text-transform uppercase
+			font 157px $BisonBold
+			line-height 1
+			color $basic-white-color
+			text-shadow 0 1px 0px $title-color, 1px 0 0px $title-color, 1px 2px 0 $title-color, 2px 1px 0 $title-color, 2px 3px 0 $title-color, 3px 2px 0 $title-color, 3px 4px 0 $title-color, 4px 3px 0 $title-color, 4px 5px 0 $title-color, 5px 4px 0 $title-color, 5px 6px 0 $title-color
+			white-space nowrap
+			&_text
+				position relative
+				z-index 3
+			span
+				font 116px $Adelina
+				text-transform none
+				display block
+				line-height 0.5
+				
+			&_col
+				position relative
+				display flex
+				align-items flex-end
+				min-height 900px
+				width 100%
+				max-width 850px
+				flex 1
+				padding-bottom 160px
+				
+		&--subtitle
+			text-transform uppercase
+			font 71px $BisonBold
+			color $basic-white-color
+			text-shadow 6px 4px 0 rgba($basic-black-color, .3)
+				
+		&--img
+			position absolute
+			bottom 0
+			width 650px
+			right 0
+			z-index 2
+			img
+				display block
+				
+		&--vacation
+			display inline-block
+			width 250px
+			height 250px
+			position absolute
+			left 100%
+			margin-left -50px
+			bottom 0
+			z-index 4
+			
+
+.twitter-card
+	&__content
+		background-color $dark-accent-color
+		color $basic-white-color
+		padding 15px
+		line-height 1.25
+		p
+			margin-bottom 22px
+			&:last-child
+				margin-bottom 0
+				
+	&__header
+		.accent-heading
+			max-width 195px
+			padding-left 15px
+			padding-right 15px
+			white-space nowrap
+			justify-content center
+	&__col
+		width 260px
+		padding-top 250px
+
+
 	
 .product-card
 	position relative
@@ -164,6 +258,7 @@
 		display flex
 		align-items flex-end
 		position relative
+		
 		img
 			@extends .content-img
 			transform translateY(-50%)
@@ -198,7 +293,7 @@
 // Event card
 .event-card
 	&__img
-		padding-top 100%
+		padding-top 84%
 		display block
 		
 	&__content
