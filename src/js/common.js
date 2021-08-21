@@ -6,7 +6,8 @@ $(document).ready(function() {
 		$(this).parents('.age-checker').stop().hide();
 
 		$('html').removeClass('is-fixed');
-		$('.content__wrapper.is-homepage').addClass('is-opened');
+		$('.content__wrapper').addClass('is-opened');
+		$('.promo-block__img').addClass('is-animated');
 	});
 
 	$('.js-cancel-age-btn').on('click', function(e) {
@@ -40,6 +41,136 @@ $(document).ready(function() {
 		$('html').toggleClass('is-fixed');
 		$('.js-mobile-menu').toggleClass('is-opened');
 	});
+
+
+	// Parallax
+
+	function parallax(item){
+		var scrolled = $(window).scrollTop();
+		var speed = $(item).attr('data-parallax-speed');
+		var direction = $(item).attr('data-parallax-direction');
+
+
+
+		if(direction === 'horisontal-right') {
+			$(item).css({
+				'transform': 'translate3d(' + (scrolled*speed) + 'px' + ', 0, 0)',
+				'-webkit-transform': 'translate3d(' + (scrolled*speed) + 'px' + ', 0, 0)',
+				'-o-transform': 'translate3d(' + (scrolled*speed) + 'px' + ', 0, 0)',
+				'-moz-transform': 'translate3d(' + (scrolled*speed) + 'px' + ', 0, 0)'
+				
+			});
+		} else if(direction === 'horisontal-left') {
+			$(item).css({
+				'transform': 'translate3d(' + -(scrolled*speed) + 'px' + ', 0, 0)',
+				'-webkit-transform': 'translate3d(' + -(scrolled*speed) + 'px' + ', 0, 0)',
+				'-o-transform': 'translate3d(' + -(scrolled*speed) + 'px' + ', 0, 0)',
+				'-moz-transform': 'translate3d(' + -(scrolled*speed) + 'px' + ', 0, 0)'
+				
+			});
+		} else if(direction === 'vertical-top') {
+			$(item).css({
+				'transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)',
+				'-moz-transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)',
+				'-ms-transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)',
+				'-o-transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)',
+				'-webkit-transform': 'translate3d(0, ' + -(scrolled*speed)+'px' + ', 0)'
+			});
+		} else if(direction === 'vertical-bottom') {
+			$(item).css({
+				'transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)',
+				'-moz-transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)',
+				'-ms-transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)',
+				'-o-transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)',
+				'-webkit-transform': 'translate3d(0, ' + (scrolled*speed)+'px' + ', 0)'
+			});
+		}
+		
+
+	}
+
+
+	var productCards = $('.product-card').toArray();
+
+	if (productCards.length > 0) {
+
+		$(window).on('scroll', function() {
+
+			var documentScroll = $(document).scrollTop();
+			var scroll = $(this).scrollTop();
+			var windowHeight = $(window).height();
+
+			productCards.forEach(function(item) {
+				var itemOffset = $(item).offset().top;
+				var itemHeight = $(item).outerHeight();
+				var visibilityPoint = itemOffset - windowHeight + 150;
+
+				if (documentScroll > visibilityPoint) {
+					$(item).find('.product-card__label').addClass('is-animated');
+				}
+
+			});
+
+
+		});
+	}
+
+
+
+	var itemsParallax = $('.js-item-parallax');
+
+
+
+	if (itemsParallax.length > 0) {
+
+		$(window).on('scroll', function(e) {
+			var scroll = $(this).scrollTop();
+
+			itemsParallax.each(function() {
+				
+				parallax($(this));
+				
+			});
+
+			
+		});
+
+	}
+
+
+	if (html >= 768) {
+
+
+		$(function(){ // document ready function
+
+			var $window = $(window);
+
+			$('.product-bg').each(function() { //выполняем скрипт отдельно для каждой секции
+				var $parallaxBlock = $(this);
+				var parallaxFunc = function() {
+					if ($window.width() >= 768) { //если ширина окна >= 768
+						var offset = $parallaxBlock.offset().top; //расстояние от начала документа до секции
+						var scrollTop = $window.scrollTop(); //прокрученное расстояние
+						var yPos = -(offset - scrollTop)/3; //считаем смещение
+						var coords = 'center '+ yPos + 'px';
+						$parallaxBlock.css('background-position', coords); //устанавливаем смещение
+					} else {
+						$parallaxBlock.css('background-position', 'top center'); //отключаем параллакс на маленьких экранах
+				}
+			};
+
+			parallaxFunc(); //выполняем нашу функцию при загрузке страницы
+
+			$window.on('scroll', function() {
+				parallaxFunc(); //и при прокрутке
+			});
+
+			});
+		});
+
+	}
+
+
 
 
 

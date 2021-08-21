@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Add is-fixed class by default to homepage -->
-<html lang="en">
+<html lang="en" class="is-fixed">
 <head>
 	<title>Tipsy Lady</title>
 
@@ -12,17 +12,12 @@
 	<meta name="keywords" content="">
 	
 	<!-- Favicons -->
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 	<link rel="manifest" href="img/favicon/site.webmanifest">
-	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#000000">
-	<!-- //Favicons -->
-	<meta name="msapplication-TileColor" content="#000000">
-	<meta name="theme-color" content="#000000">
-	<meta name="msapplication-navbutton-color" content="#000000">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- Main file with styles -->
 	<link rel="stylesheet" href="css/main.min.css">
@@ -33,9 +28,9 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-</head><body>
-	
+</head>
 
+<body>
 	<div class="age-checker bg" style="background-image: url('img/backgrounds/promo-bg.png');">
 	<style>
 
@@ -108,13 +103,16 @@
 		</div>
 	</div>
 </div>
+	
+
 	<!-- CONTENT WRAPPER -->
-	<div class="content__wrapper is-homepage">
+	<div class="content__wrapper">
 
 
 
 		<!-- Header -->
 		<header class="header accent-gradient-bg">
+
 	<div class="container">
 		<div class="row align-vertical-center align-horisontal-between header__row">
 			<a href="index.html" class="logo">
@@ -168,9 +166,10 @@
 				<span class="btn-hamburger__line"></span>
 			</button>
 			<!-- //Mobile menu btn -->
-			
+
 		</div>
 	</div>
+
 
 </header>
 		<!-- //Header -->
@@ -224,9 +223,11 @@
 						<!-- //promo title -->
 
 						<div class="promo-block__img">
-							<div class="promo-block__img--product">
-								<img src="img/tipsy.png" alt="">
-								<div class="promo-block__img--product_text">
+
+							<div class="promo-block__img--product " >
+								<img src="img/tipsy.png" alt="" class="js-item-parallax" data-parallax-speed="0.1" data-parallax-direction="vertical-top">
+
+								<div class="promo-block__img--product_text js-item-parallax"  data-parallax-speed="0.15" data-parallax-direction="vertical-top">
 									<img src="img/refreshing.svg" alt="Refreshing taste">
 								</div>
 								
@@ -256,7 +257,7 @@
 								<div class="product-card__description text-right">
 									<h3 class="product-card__title">Rum punch</h3>
 									<div class="product-card__description--link ">
-										<a href="#" class="btn">View drink</a>
+										<a href="page-catalog.html#rumPunch" class="btn">View drink</a>
 									</div>
 								</div>
 							</div>
@@ -278,7 +279,7 @@
 					<div class="container">
 						<div class="row align-horisontal-between row-nowrap products-cards__entering--row">
 							<div class="products-cards__entering--title_col">
-								<div class="products-cards__entering--title_text">
+								<div class="products-cards__entering--title_text js-item-parallax" data-parallax-speed="0.1" data-parallax-direction="vertical-top">
 									<h2 class="products-cards__entering--title"><span>Our</span>Drinks list</h2>
 									<h3 class="products-cards__entering--subtitle">Find the perfect mix</h3>
 								</div>
@@ -287,18 +288,20 @@
 									<img src="img/woman.png" alt="">
 								</div>
 
-								<div class="products-cards__entering--vacation">
+								<div class="products-cards__entering--vacation js-item-parallax" data-parallax-speed="0.1" data-parallax-direction="vertical-top">
 									<img src="img/vacation_drink.svg" alt="Vacation drink">
 								</div>
 							</div>
 							<!-- //title col -->
 
 							<div class="twitter-card__col">
-								<div class="twitter-card text-right">
+								<div class="twitter-card text-right js-item-parallax" data-parallax-speed="0.1" data-parallax-direction="vertical-top">
 									<div class="twitter-card__header">
 										<div class="accent-heading">
 											<span>twitter feed</span>
-											<span class="accent-heading__ic" style="background-image: url('img/icons/svg/noindex_twitter.svg');"></span>
+											<span class="accent-heading__ic">
+												<img src="img/icons/svg/noindex_twitter.svg" alt="Twitter Icon">
+											</span>
 										</div>
 										<div class="twitter-card__content ">
 											<p>Come along and get Tipsy with<br>our Caribbean inspired cocktails.</p>
@@ -329,7 +332,7 @@
 						<div class="row align-horisontal-center products-cards__row">
 							<article class="product-card__wrapper col-w-33">
 								<div class="product-card --fruity-color">
-									<div class="product-card__label">
+									<div class="product-card__label" style="transition-delay: 0s">
 										<img src="img/status/fruity.svg" alt="fruity">
 									</div>
 									<div class="product-card__img thumbnail">
@@ -338,7 +341,7 @@
 									<div class="product-card__description">
 										<h3 class="product-card__title">Rum punch</h3>
 										<div class="product-card__description--link">
-											<a href="#" class="btn">View drink</a>
+											<a href="page-catalog.html#rumPunch" class="btn">View drink</a>
 										</div>
 									</div>
 								</div>
@@ -347,7 +350,7 @@
 
 							<article class="product-card__wrapper col-w-33">
 								<div class="product-card --fresh-color">
-									<div class="product-card__label">
+									<div class="product-card__label" style="transition-delay: .23s">
 										<img src="img/status/fresh.svg" alt="Fresh">
 									</div>
 									<div class="product-card__img thumbnail">
@@ -356,7 +359,7 @@
 									<div class="product-card__description">
 										<h3 class="product-card__title">Sunrise Mimosa</h3>
 										<div class="product-card__description--link">
-											<a href="#" class="btn">View drink</a>
+											<a href="page-catalog.html#sunriseMimosa" class="btn">View drink</a>
 										</div>
 									</div>
 								</div>
@@ -365,7 +368,7 @@
 
 							<article class="product-card__wrapper col-w-33">
 								<div class="product-card --mint-color">
-									<div class="product-card__label">
+									<div class="product-card__label" style="transition-delay: .46s">
 										<img src="img/status/mint.svg" alt="mint">
 									</div>
 									<div class="product-card__img thumbnail">
@@ -374,7 +377,7 @@
 									<div class="product-card__description">
 										<h3 class="product-card__title">Mojito</h3>
 										<div class="product-card__description--link">
-											<a href="#" class="btn">View drink</a>
+											<a href="page-catalog.html#mojito" class="btn">View drink</a>
 										</div>
 									</div>
 								</div>
@@ -408,9 +411,9 @@
 				<div class="footer-col col-gutters footer-col__nav">
 					<nav class="nav">
 						<ul>
-							<li><a href="page-content.html">Terms & condition</a></li>
-							<li><a href="page-content.html">Privacy</a></li>
-							<li><a href="page-content.html">Drink responsibly</a></li>
+							<li><a href="page-terms.html">Terms & condition</a></li>
+							<li><a href="page-privacy.html">Privacy</a></li>
+							<li><a href="page-responsibly.html">Drink responsibly</a></li>
 						</ul>
 					</nav>
 				</div>

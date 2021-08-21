@@ -77,6 +77,15 @@
 			width 520px
 			height 215px
 			background url('../img/decors/circles.svg') 50% 50% no-repeat / contain
+			transition all 1.5s ease-in-out
+			transform translateY(40px)
+			transition-delay .2s
+			opacity 0
+			
+		&.is-animated
+			&:before
+				transform translateY(0)
+				opacity 1
 			
 		img
 			display block
@@ -90,8 +99,10 @@
 				position absolute
 				left 50%
 				bottom 10%
-				transform translateX(-50%)
 				width 390px
+				height 90px
+				margin-left -195px
+				
 				img
 					display block
 					width 100%
@@ -146,6 +157,7 @@
 			&_text
 				position relative
 				z-index 3
+				bottom -100px
 			span
 				font 116px $Adelina
 				text-transform none
@@ -184,16 +196,18 @@
 			position absolute
 			left 100%
 			margin-left -50px
-			bottom 0
+			bottom -100px
 			z-index 4
 			
 
 .twitter-card
+	position relative
 	&__content
 		background-color $dark-accent-color
 		color $basic-white-color
 		padding 15px
 		line-height 1.25
+		box-shadow 1px 7px 21px -8px rgba(0,0,0,0.34)
 		p
 			margin-bottom 22px
 			&:last-child
@@ -209,6 +223,9 @@
 	&__col
 		width 260px
 		padding-top 250px
+		
+		.twitter-card
+			bottom -50px
 
 
 	
@@ -245,8 +262,17 @@
 		z-index 1
 		width 120px
 		height 120px
+		opacity 0
+		transform translateY(30px)
+		transition all .23s ease-in-out
 		img
 			@extends .content-img
+			
+		&.is-animated
+			opacity 1
+			transform translateY(0)
+			
+
 			
 
 		
@@ -292,6 +318,7 @@
 
 // Event card
 .event-card
+	
 	&__img
 		padding-top 84%
 		display block
@@ -299,4 +326,5 @@
 	&__content
 		background-color $accent-color
 		padding 20px
+		box-shadow 1px 7px 21px -8px rgba(0,0,0,0.19)
 		

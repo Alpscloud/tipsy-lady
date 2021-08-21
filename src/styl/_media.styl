@@ -254,7 +254,15 @@
 		padding-top 300px
 		background-position bottom right
 			
+	
+	.twitter-card__col 
+		.twitter-card
+			bottom 0
 			
+	.products-cards__entering--vacation
+		bottom -130px
+		margin-left 30px
+		
 		
 
 +max-screen(767px)
@@ -264,6 +272,12 @@
 	.page-title
 		font-size 68px
 		line-height 1
+		
+	.full-section
+		min-height 100vh
+		
+	.technical-block img
+		max-width 100%
 	// Header
 	.header
 		height 55px
@@ -323,7 +337,7 @@
 		
 		.socials
 			position fixed
-			top 55px
+			top 54.5px
 			horisontal-center()
 			right auto
 			z-index 1
@@ -520,11 +534,11 @@
 					
 			&--vacation
 				left 50%
-				horisontal-center()
+				margin-left -100px
 				bottom -80px
 				width 200px
 				height 200px
-				margin-left 0
+				transform none !important
 	.twitter-card
 		&__col
 			order 1
@@ -533,6 +547,11 @@
 			z-index 4
 			margin 0 auto
 			margin-bottom 140px
+			.twitter-card
+				bottom auto
+				transform none !important
+			
+			
 	
 
 	.aqua-decor__line
@@ -566,6 +585,32 @@
 		background-image url('../img/backgrounds/product-bg-mobile.jpg')
 		background-position top center
 		background-size 100% auto
+		
+
+	.products-cards__entering--title_text
+		bottom auto
+		transform none !important
+		
+
+	.content
+		font-size 14px
+		
+		h2
+			font-size 28px
+			margin-bottom 20px
+			
+		h3
+			font-size 24px
+			margin-bottom 20px
+			
+		p, ul, ol
+			margin-bottom 20px
+		
+		&-title
+			font-size 40px
+			margin-bottom 20px
+			
+
 
 +max-screen(550px)
 	.our-drinks-imgs
@@ -576,11 +621,13 @@
 		&__jars
 			width 100%
 			height auto
-			bottom -170px
+			bottom -140px
 			img
 				width 40% 
-				&:first-child,
-				&:last-child
+				bottom 0 !important
+				transform none !important
+				&:nth-child(1),
+				&:nth-child(3)
 					width 30%
 
 
@@ -594,8 +641,7 @@
 +max-screen(460px)
 	// products card
 	.product-card
-		&__label
-			display none
+	
 			
 		&__description
 			padding-left 20px
@@ -677,6 +723,8 @@
 
 	.promo-block__img--product_text
 		width 240px
+		height 55px
+		margin-left -120px
 		
 
 	.our-drinks-imgs

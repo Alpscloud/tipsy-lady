@@ -21,10 +21,8 @@
 	overflow hidden
 	width 100%
 	height 100%
-	
-	&.is-homepage
-		transition all .3s ease-in-out
-		opacity 0
+	transition all .3s ease-in-out
+	opacity 0
 	&.is-opened
 		opacity 1
 
@@ -132,13 +130,22 @@
 			
 	h2,h3,h3,h4,h5,h6
 		line-height 1
-		font-family $Bold
+		font-family $BisonBold
 		
 	strong, b
-		font-family $Bold
+		font-weight 600
+		
+	h2
+		font-size 34px
+		margin-bottom 30px
+		
+	h3
+		font-size 30px
+		margin-bottom 30px
 		
 
 	ul, ol
+		margin-bottom 30px
 		li
 			display block
 			position relative
@@ -156,6 +163,14 @@
 				border-radius 50%
 				margin-right 4px
 				background-color $text-color
+				vertical-align middle
+				margin-bottom 5px
+				
+	a
+		color inherit
+		border-bottom 1px solid
+		&:hover
+			color $accent-color
 				
 	ol
 		counter-reset list
