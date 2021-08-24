@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- Add is-fixed class by default to homepage -->
+<html lang="en" class="is-fixed">
+<head>
+	<title>Tipsy Lady</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<body>
+	<div class="age-checker bg" style="background-image: url('img/backgrounds/promo-bg.png');">
+	<style>
+
+		.age-checker {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1000;
+			padding: 40px;
+		}
+		.age-checker__title {
+			text-transform: uppercase;
+			text-align: center;
+			font: 80px 'Bison-Bold', Arial, sans-serif;
+			line-height: 1;
+			margin-bottom: 130px;
+			position: relative;
+			z-index: 1;
+		}
+		.age-checker__title:before {
+			position: absolute;
+			width: 277px;
+			height: 318px;
+			background: url("img/21.svg") 50% 50% no-repeat/contain;
+			z-index: -1;
+			margin-top: -20px;
+		}
+		.age-checker__btns {white-space: nowrap;}
+
+		.age-checker__btns .btn {
+			margin-right: 30px;
+		}
+		.age-checker__btns .btn:last-child {
+			margin-right: 0;
+		}
+
+		@media only screen and (max-width: 620px) {
+			.age-checker__title {
+				font-size: 51px;
+				margin-bottom: 80px;
+			}
+
+			.age-checker__title:before {
+				width: 181px;
+				height: 208px;
+			}
+
+			.age-checker__btns .btn {
+				margin-right: 20px;
+			}
+
+			.btn-lg {
+				font-size: 17px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				max-width: 90px;
+			}
+		}
+
+	</style>
+
+	<div class="age-checker__block text-center basic-white-color">
+		<p class="age-checker__title">Are you already<br>21 years old?</p>
+
+		<div class="age-checker__btns">
+			<button class="btn btn-lg btn-dark js-accept-age-btn" type="btn">yes</button>
+			<button class="btn btn-lg btn-dark js-cancel-age-btn" type="btn">No</button>
+		</div>
+	</div>
+</div>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+
+		<!-- Header -->
+		<header class="header accent-gradient-bg">
+
+	<div class="container">
+		<div class="row align-vertical-center align-horisontal-between header__row">
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt="Tipsy Lady Logo">
+			</a>
+
+			<div class="nav-wrapper js-mobile-menu">
+				<!-- NAV -->
+				<nav class="nav">
+	<ul>
+		<li><a href="page-catalog.html">Products & Drinks</a></li>
+		<li><a href="page-events.html">Promotions & events</a></li>
+		<li><a href="page-about.html">About</a></li>
+		<li><a href="page-catalog.html">Shop</a></li>
+		<li><a href="page-contacts.html">Contact</a></li>
+	</ul>
+</nav>
+				<!-- //NAV -->
+
+
+				<ul class="socials">
+					<li class="socials-item">
+						<a href="#" class="socials-item__link" target="_blank" rel="nofollow" >
+							<span class="socials-item__link--ic" style="background-image: url('img/icons/svg/socials/facebook.svg');"></span>
+						</a>
+					</li>
+					<li class="socials-item">
+						<a href="#" class="socials-item__link" target="_blank" rel="nofollow">
+							<span class="socials-item__link--ic" style="background-image: url('img/icons/svg/socials/twitter.svg');"></span>
+						</a>
+					</li>
+					<li class="socials-item">
+						<a href="#" class="socials-item__link" target="_blank" rel="nofollow">
+							<span class="socials-item__link--ic" style="background-image: url('img/icons/svg/socials/instagram.svg');"></span>
+						</a>
+					</li>
+				</ul>
+
+
+				<div class="nav-wrapper__img">
+					<img src="img/nav-img.png" alt="">
+				</div>
+
+			</div>
+
+
+			<!-- Mobile menu btn -->
+			<button type="button" class="btn-hamburger js-open-mobile-menu-btn">
+				<span class="btn-hamburger__line"></span>
+				<span class="btn-hamburger__line"></span>
+				<span class="btn-hamburger__line"></span>
+			</button>
+			<!-- //Mobile menu btn -->
+
+		</div>
+	</div>
+
+
+</header>
+
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<section class="sect__content gutters">
+				<div class="container">
+					<h1 class="content-title">Terms & condition</h1>
+
+					<div class="content">
+						
+						<p>This page (together with the documents referred to on it) tells you the terms of use on which you may make use of this website and any and all other online or digital platforms (including without limitation mobile and other applications, such as Facebook and Instagram apps) which we maintain (our “Site”). Please read these terms of use carefully before you start to use our Site. This Site is for the personal use, of persons who are lawfully permitted to purchase and consume alcoholic beverages, in countries and other territories where the sale, advertising and consumption of alcoholic beverages is lawful. By using our Site, you indicate that you accept these terms of use and that you agree to abide by them. Please exit our Site immediately if you do not accept these terms of use.</p>
+						<p>These terms refer to the Privacy and Cookie Policies, which also apply to your use of our Site.</p>
+						<p>Please exit our Site immediately if you are not of legal age for consuming alcoholic beverages in the country or other territory in which you are located, or if you are accessing our Site in a country or other territory where use of our Site is not permitted. Content is to be shared with those over the legal drinking age only.</p>
+						<h2>1. SOCIAL RESPONSIBILITY</h2>
+						<p>As part of our commitment to responsible marketing, we comply with the social responsibility policies established by DISCUS (http://www.discus.org/) – the Distilled Spirits Council for the United States and spiritsEUROPE (http://spirits.eu/) – the European representative body for producers of spirit drinks, which set out the principles we maintain in all of our sales and marketing activities, including advertising and promotional programs.</p>
+						<h2>2. ACCESSING OUR SITE</h2>
+						<p>Access to our Site is permitted on a temporary basis to users located in countries or other territories where the sale, advertising and consumption of alcoholic beverages is permitted. We reserve the right to withdraw, amend, suspend or terminate indefinitely the services we provide on our Site without notice. We may suspend, terminate, or restrict access to the services we provide on our Site if you have breached these terms and/or breached our Content Standards. We may also suspend, terminate or restrict access with immediate effect if, for example, we need to take steps to defend the Site or its users from fraud, malware, spam or cybersecurity or data breaches or if we are required to do so by law. We will not be liable if for any reason our Site is unavailable at any time or for any period.</p>
+						<p>Where you are given a username and account details as part of your registration, you must keep your username and any passwords confidential, and you must not disclose it to any third party. We will not be responsible or liable, directly or indirectly, in any way for any loss or damage of any kind incurred as a result of, or in connection with any unauthorized use of your username and password by a third party. We have the right to disable any user identification code or password, whether chosen by you or allocated by us, at any time, if in our opinion you have failed to comply with any of the provisions of these terms of use.</p>
+						<h2>3. INTELLECTUAL PROPERTY RIGHTS</h2>
+						<p>All intellectual property and database rights, in our Site, and in the materials published on it by us, including but not limited to trademarks, designs, logos, text, images, audio and video materials, look and feel and software (including code, interface and website structure) (“Materials”) are owned by us, our subsidiaries, affiliates companies and/or any of our partners. The Materials are protected by intellectual property laws and treaties around the world. All such rights are reserved. You may not remove any copyright or other proprietary notices from any Materials on our Site.</p>
+						<p>Except as provided in these Terms and Conditions of Website Use, the use of this Site does not grant you any rights, title, interest or license to any Materials you may access on this Site. You are entitled to use the Materials on the Site for the sole purpose of use of the Site, and you may not use the Materials for any other purpose not connected with your enjoyment of the Site. You may print a reasonable number of hard copies, and may download extracts, of any page(s) from our Site for your lawful, personal, non-commercial use.</p>
+						<p>You must not use any part of the Materials on our Site for commercial purposes unless expressly permitted by us and/or, where applicable, from the relevant Owner.</p>
+						<h2>4. ACCEPTABLE USE</h2>
+						<p>You may use our Site only for lawful purposes and we reserve the right, in our sole discretion, to terminate your use of the Site where you are in breach of these terms.</p>
+						<p>You are not permitted to use the Materials outside of the Site, save that you may use the recipes contained in the Site for your professional and domestic use as you see fit. <b>You may not use our Site:</b></p>
+						<ul>
+							<li>In any way that breaches any applicable local, national or international law or regulation.</li>
+							<li>In any way that is unlawful or fraudulent or has any unlawful or fraudulent purpose or effect.</li>
+							<li>For the purpose of harming or attempting to harm minors in any way or which is intended to promote alcohol to minors.</li>
+							<li>To send, knowingly receive, upload, download, use or re-use any Material which does not comply with our Content Standards below.</li>
+							<li>To transmit, or procure the sending of, any unsolicited or unauthorized advertising or promotional material or any other form of similar solicitation (spam).</li>
+							<li>To knowingly transmit any data, send or upload any material that contains viruses, Trojan horses, worms, time-bombs, keystroke loggers, spyware, adware or any other harmful programs or similar computer code designed to adversely affect the operation of any computer software or hardware (“Malicious Code”).</li>
+						</ul>
+
+						<h2>5. USER GENERATED CONTENT AND MODERATION</h2>
+						<p>We may from time to time provide interactive services on our Site which may include information and materials uploaded by other users of the Site, including, without limitation, comments and posts, chat rooms and forums, bulletin boards, social content, music mix rooms, image upload features, interactive drinks and recipe functionality and interactive club finder. Where we do provide any interactive service, we will provide clear information to you about the kind of service offered, AND any additional terms that apply which you will need to agree to (e.g., Content Guidelines).</p>
+						<p>Unless otherwise stated in these terms and conditions or any applicable additional terms, we do not, and are under no obligation to: oversee, monitor or moderate any interactive service we provide on our Site, or any content uploaded by users of the interactive services on our Site.</p>
+						<p>The views expressed by other users on our Site do not represent our views or values and are not endorsed by us. We expressly exclude our liability for any loss or damage arising from the use of any interactive service by a user in contravention of our Content Standards.</p>
+						<p>If a Site promotes or markets any Tipsy Lady branded products or services, we reserve the right to moderate any user-generated content that is uploaded to such Site to ensure that our Content Standards and/or Content Guidelines are being adhered to. We reserve the right to remove any user-generated content that we consider (in our sole discretion) contravenes our Content Standards.</p>
+						<p>If you wish to complain about content uploaded by other users, please contact us on <a href="mailto:info@tipsyladycocktails.com">info@tipsyladycocktails.com</a></p>
+						<h2>6. UPLOADING MATERIAL TO OUR SITE</h2>
+						<p>Where you submit your own content, images, photographs, recipes, videos, and any other materials (“Your Content”) to the Site, you hereby give us, and our group companies and business partners, a non-exclusive license to display Your Content on the Site, and to use Your Content for our own purposes (including for our own promotional purposes), and to allow other users to view, interact with, share and download Your Content. You acknowledge that given the nature of the Site, Your Content will be publicly visible and may be shared by third parties, and that even if you delete Your Content from the Site, it may still be visible to third parties who have already interacted with or shared Your Content. You shall ensure that you have all relevant permissions, rights and licenses to publish Your Content on the Site.</p>
+						<p>Your Content that you upload to our Site (including interactions with other users) must comply with our Content Standards. Any material you upload to our Site will be considered non-confidential and non-proprietary, and unless otherwise agreed in writing between us, we have the right to use, copy, distribute and disclose to third parties any such material in whole or in part for any purpose. We also have the right to disclose your identity to any third party who is claiming that any material posted or uploaded by you to our Site constitutes a violation of their intellectual property rights, or of their right to privacy. You waive any moral rights in respect of any material you upload to our Site.</p>
+						<p>We will not be responsible, or liable to any third party, for the content or accuracy of any materials posted by you or any other user of our Site.</p>
+						<p>We have the right to remove any material or posting you make on our Site of social media platforms if, in our sole opinion, such material does not comply with our Content Standards.</p>
+						<h2>7. CONTENT STANDARDS</h2>
+						<p>Any and all material which you contribute to our Site must comply with the spirit, as well as the letter, of the following content standards and our Content Guidelines where applicable. These standards apply to each part of any contribution as well as to its whole.</p>
+						<p><b>Your contributions must:</b></p>
+						<ul>
+							
+
+							<li>Be accurate (where they state facts).</li>
+							<li>Be genuinely held (where they state opinions).</li>
+							<li>Comply with applicable law in the US and in any country from which they are posted.</li>
+						</ul>
+						<p><b>Your contributions must not:</b></p>
+						<ul>
+							<li>Contain any material which is unlawful, obscene, offensive, hateful or inflammatory.</li>
+							<li>Contain sexually explicit material.</li>
+							<li>Harm, or attempt to harm, minors in any way.</li>
+							<li>Be targeted at an under legal drinking age audience</li>
+							<li>Encourage, condone, promote or glamorize under-age, excessive or irresponsible consumption of alcoholic beverages or drink driving.</li>
+							<li>Promote violence</li>
+							<li>Contain any material or engage in activities which are indecent, demeaning or insulting or would cause offense to others on grounds of gender, race, religion, creed, nationality, culture, disability, sexual orientation or age.</li>
+							<li>Infringe any copyright, database right, trademark or other proprietary right of any other person.</li>
+							<li>Be likely to deceive any person.</li>
+							<li>Be made in breach of any legal duty owed to a third party, such as a contractual duty or a duty of confidence.</li>
+							<li>Promote any illegal or immoral activity.</li>
+							<li>Be threatening, abuse or invade another’s privacy, or cause annoyance, inconvenience or needless anxiety.</li>
+							<li>Be likely to harass, upset, embarrass, alarm or annoy any other person.</li>
+							<li>Be used to impersonate any person, or to misrepresent your identity or affiliation with any person.</li>
+							<li>Give the impression that they emanate from us, if this is not the case.</li>
+							<li>Advocate, promote or assist any unlawful act such as (by way of example only) copyright infringement or computer misuse.</li>
+							<li>Disclose any personally identifiable information about yourself or any other party (e.g., telephone number, geographic address, or any other information from which an individual’s identity or contact information can be derived).</li>
+						</ul>
+						<p>This list only serves to provide examples and is not meant to be an exhaustive list.</p>
+						<h2>	8. CONTENT GUIDELINES FOR ALCOHOL RESPONSIBILITY</h2>
+						<p>“Content” includes any contribution posted or made available by You on our Site, including, but not limited to, cocktail names, recipes, comments, pictures, videos, and any other materials. Any, and all Content which You contribute to the Site must comply with these Content Guidelines.</p>
+						<p><b>Content must adhere to the following:</b></p>
+						<ul>
+							<li>Anyone whose image or video is featured should be and look the age as required by local regulations (e.g., 21+ in the US) and their express consent must be sought.</li>
+							<li>No child/minor even in the background.</li>
+							<li>Do not use or show personalities or celebrities, cartoon characters or images, music or any references that primarily appeal to persons below the legal age for consuming alcoholic beverages in the country or other territory in which you are located.</li>
+							<li>If you are located in the US, do not reference names of, or website links to, legal entities and/or individuals that hold on-trade or off-trade alcohol beverage licenses in the US (“references” include, but are not limited to, statements, photographs, and videos).</li>
+						</ul>
+						<p><b>Content should not display or condone:</b></p>
+						<ul>
+							<li>Activities that reward or encourage excessive or irresponsible consumption of alcohol, including but not limited to; underage consumption, drinking games, rapid or unsafe drinking, overconsumption, drunk driving.</li>
+							<li>Aggression or unruly, irresponsible, or anti-social behavior or link alcohol with brave, tough or daring people or behavior.</li>
+							<li>Illicit drugs.</li>
+							<li>Rewarding oneself with alcohol, or consuming alcohol as a way to escape from something or overcome boredom, loneliness or other problems.</li>
+							<li>Glamorizing the consumption of alcohol itself or presenting alcohol as a key component of the sexual, social, professional, educational, or athletic success or popularity.</li>
+							<li>Consumption of alcohol having any medical or therapeutic effect.</li>
+							<li>Any activities or locations in which drinking would be unsafe or unwise; sport, violent behaviors (or games), dangerous environment/situations (e.g., water activities or driving any vehicle).</li>
+							<li>Alcoholic products/cocktails – Please endorse responsible consumption of alcoholic products and cocktails, and:</li>
+							<li>Generally, advocate responsible drinking.</li>
+						</ul>
+						<p>This list only serves to provide examples and is not meant to be an exhaustive list.</p>
+						<p>For more on alcohol responsibility please visit <a href="http://www.responsibledrinking.org/" target="_blank">http://www.responsibledrinking.org/</a> and <a href="http://www.responsibledrinking.eu/" target="_blank">http://www.responsibledrinking.eu/</a> or any official local alcohol responsibility site.</p>
+						<h2>9. OUR LIABILITY</h2>
+						<p>The material displayed on our Site is provided “as is” and without any guarantees, conditions or warranties as to its accuracy, to the extent permitted by law, we and all other members of our Group of Companies and our affiliates (“Our Group”) hereby expressly exclude and disclaim:</p>
+						<p>All conditions, representations, or warranties of any kind, either express or implied, including warranties of merchantability or fitness for a particular purpose and other terms which might otherwise be implied by statute, common law or the law of equity.</p>
+						<p>Any liability for any direct, indirect or consequential loss or damage incurred by any user in connection with our Site or in connection with the User Services, or your use of our Site, any websites linked to it and any materials posted on it, including, without limitation any liability for: loss of income or revenue, loss of business, loss of profits or contracts, loss of anticipated savings, loss of data, loss of goodwill, wasted management or office time, and for any other loss or damage of any kind, however arising and whether caused by tort (including negligence), breach of contract or otherwise, even if foreseeable.</p>
+						<p>	Because some jurisdictions do not allow the exclusion or limitation of liability or damages, Our Group’s liability in such jurisdictions shall be limited to the fullest extent permitted by law.</p>
+						<p>Nothing in these terms affects or limits your statutory rights as a consumer.</p>
+						<h2>	10. INFORMATION ABOUT YOU AND YOUR VISITS TO OUR SITE AND EVENTS</h2>
+						<p>Your privacy is important to us. We process information about you in accordance with our Privacy Policy.</p>
+						<h2>	11. MALICIOUS CODE, HACKING AND OTHER OFFENSES</h2>
+						<p>You must not misuse our Site by knowingly introducing any malicious code. You must not attempt to gain unauthorized access to our Site, the server on which our Site is stored, or any server, computer or database connected to our Site. You must not attack our Site via a denial-of-service attack or a distributed denial-of service attack.</p>
+						<p>	We will not be liable for any loss or damage caused by a distributed denial-of-service attack or Malicious Code that may infect your computer equipment, computer programs, data or other proprietary material due to your use of our Site or to your downloading of any material posted on it, or on any website linked to it.</p>
+						<h2>12. LINKING TO OUR SITE</h2>
+						<p>Unless otherwise authorized in writing by us, you may not suggest any form of association, approval or endorsement of any website on our part. If you wish to make any use of Material on our Site other than that set out above, please address your request for the attention to <a href="mailto:info@tipsyladycocktails.com">info@tipsyladycocktails.com</a> </p>
+						<h2>13. LINKS FROM OUR SITE</h2>
+						<p>Where our Site contains links to other sites and resources provided by third parties, these links are provided for your information only. We have no control over the contents of those sites or resources and accept no responsibility for them or for any loss or damage that may arise from your use of them.</p>
+						<h2>14. INDEMNITY</h2>
+						<p>You will indemnify Our Group against any loss, damage or cost incurred by us arising out of your use of our Site, any User Services provided by you or accessible to you via the Site, any breach of these terms and conditions by you, or your violation of any other laws, regulations and rules. You will also indemnify us against any claims that information or material which you have submitted to us is in violation of any law or in breach of any third-party rights (including, but not limited to, claims in respect of defamation, invasion of privacy, breach of confidence and infringement of any intellectual property right). We reserve the right exclusively to defend and control any claims arising from the above and you will fully cooperate with us in any such defenses.</p>
+						<h2>15. ENTIRE AGREEMENT</h2>
+						<p>These terms of use, including our Privacy Policy and Cookie Policy constitute the entire agreement between you and us in relation to your use of our Site.</p>
+						<h2>	16. JURISDICTION AND APPLICABLE LAW</h2>
+						<p>In the event a dispute cannot be resolved between us and any business users by means of our internal complaint-handling system, we may agree to enter into mediation to settle such a dispute. If you are located in the U.S., these terms are governed and construed in accordance with the laws of the State of South Carolina, excluding its conflicts of law rules, and any dispute arising out of or relating to these Terms and Conditions of Website Use or your access or use of this Site will be subject to the exclusive jurisdiction of the courts located within the county of Berkeley in the State of South Carolina, and you hereby submit to the personal jurisdiction of such courts.</p>
+						<p>We may revise these terms of use at any time by amending this page.</p>
+						<h2>17. TRANSFERRING THIS AGREEMENT</h2>
+						<p>We may transfer our rights and obligations under these terms to another organization. We will always tell you in writing if this happens and we will ensure that the transfer will not affect your rights under the contract.</p>
+						<h2>18. INFORMATION ABOUT US</h2>
+						<p>In the present Terms and Conditions of Website Use and in the connected Cookie and Privacy Policies, “We” or “us” means Tipsy Lady, LLC., registered in South Carolina, The USA. If you have any concerns about material which appears on our Site or if you need to communicate with us email: <a href="mailto:info@tipsyladycocktails.com">info@tipsyladycocktails.com</a></p>
+
+
+
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		<footer class="footer ">
+	<div class="footer-line">
+		<img src="img/decors/noindex_footer-line.png" alt="">
+	</div>
+
+	<div class="footer-content accent-gradient-bg">
+		<div class="container">
+			<div class="row row-gutters footer__row align-vertical-center row-nowrap">
+				<div class="footer-col col-gutters footer-col__text">
+					<div class="footer-text">
+						<p>(C) 2021 Tipsy Lady, LLC. |<br>Tipsy Lady® is a registered trademark of Tipsy Lady, LLC.</p>
+						<p>Please drink responsibly.</p>
+					</div>
+				</div>
+				<!-- //footer col -->
+				<div class="footer-col col-gutters footer-col__nav">
+					<nav class="nav">
+						<ul>
+							<li><a href="page-terms.html">Terms & condition</a></li>
+							<li><a href="page-privacy.html">Privacy</a></li>
+							<li><a href="page-responsibly.html">Drink responsibly</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- //footer col -->
+				<div class="footer-col col-gutters footer-col__logo">
+					<div class="footer-logo">
+						<a href="index.html" class="logo">
+							<img src="img/logo.svg" alt="Tipsy Lady Logo">
+						</a>
+
+						<div class="footer-logo__img">
+							<img src="img/footer-img.png" alt="">
+						</div>
+					</div>
+				</div>
+				<!-- //footer col -->
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+</footer>
+
+		<!-- //Footer -->
+
+
+
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	<!-- jQuery IF NEEDED-->
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<!-- Main file with scripts -->
+<script src="js/common.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!-- Add is-fixed class by default to homepage -->
+<html lang="en" class="is-fixed">
+<head>
+	<title>Tipsy Lady</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<body>
+	<div class="age-checker bg" style="background-image: url('img/backgrounds/promo-bg.png');">
+	<style>
+
+		.age-checker {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1000;
+			padding: 40px;
+		}
+		.age-checker__title {
+			text-transform: uppercase;
+			text-align: center;
+			font: 80px 'Bison-Bold', Arial, sans-serif;
+			line-height: 1;
+			margin-bottom: 130px;
+			position: relative;
+			z-index: 1;
+		}
+		.age-checker__title:before {
+			position: absolute;
+			width: 277px;
+			height: 318px;
+			background: url("img/21.svg") 50% 50% no-repeat/contain;
+			z-index: -1;
+			margin-top: -20px;
+		}
+		.age-checker__btns {white-space: nowrap;}
+
+		.age-checker__btns .btn {
+			margin-right: 30px;
+		}
+		.age-checker__btns .btn:last-child {
+			margin-right: 0;
+		}
+
+		@media only screen and (max-width: 620px) {
+			.age-checker__title {
+				font-size: 51px;
+				margin-bottom: 80px;
+			}
+
+			.age-checker__title:before {
+				width: 181px;
+				height: 208px;
+			}
+
+			.age-checker__btns .btn {
+				margin-right: 20px;
+			}
+
+			.btn-lg {
+				font-size: 17px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				max-width: 90px;
+			}
+		}
+
+	</style>
+
+	<div class="age-checker__block text-center basic-white-color">
+		<p class="age-checker__title">Are you already<br>21 years old?</p>
+
+		<div class="age-checker__btns">
+			<button class="btn btn-lg btn-dark js-accept-age-btn" type="btn">yes</button>
+			<button class="btn btn-lg btn-dark js-cancel-age-btn" type="btn">No</button>
+		</div>
+	</div>
+</div>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+
+		<!-- Header -->
+		<header class="header accent-gradient-bg">
+
+	<div class="container">
+		<div class="row align-vertical-center align-horisontal-between header__row">
+			<a href="index.html" class="logo">
+				<img src="img/logo.svg" alt="Tipsy Lady Logo">
+			</a>
+
+			<div class="nav-wrapper js-mobile-menu">
+				<!-- NAV -->
+				<nav class="nav">
+	<ul>
+		<li><a href="page-catalog.html">Products & Drinks</a></li>
+		<li><a href="page-events.html">Promotions & events</a></li>
+		<li><a href="page-about.html">About</a></li>
+		<li><a href="page-catalog.html">Shop</a></li>
+		<li><a href="page-contacts.html">Contact</a></li>
+	</ul>
+</nav>
+				<!-- //NAV -->
+
+
+				<ul class="socials">
+					<li class="socials-item">
+						<a href="#" class="socials-item__link" target="_blank" rel="nofollow" >
+							<span class="socials-item__link--ic" style="background-image: url('img/icons/svg/socials/facebook.svg');"></span>
+						</a>
+					</li>
+					<li class="socials-item">
+						<a href="#" class="socials-item__link" target="_blank" rel="nofollow">
+							<span class="socials-item__link--ic" style="background-image: url('img/icons/svg/socials/twitter.svg');"></span>
+						</a>
+					</li>
+					<li class="socials-item">
+						<a href="#" class="socials-item__link" target="_blank" rel="nofollow">
+							<span class="socials-item__link--ic" style="background-image: url('img/icons/svg/socials/instagram.svg');"></span>
+						</a>
+					</li>
+				</ul>
+
+
+				<div class="nav-wrapper__img">
+					<img src="img/nav-img.png" alt="">
+				</div>
+
+			</div>
+
+
+			<!-- Mobile menu btn -->
+			<button type="button" class="btn-hamburger js-open-mobile-menu-btn">
+				<span class="btn-hamburger__line"></span>
+				<span class="btn-hamburger__line"></span>
+				<span class="btn-hamburger__line"></span>
+			</button>
+			<!-- //Mobile menu btn -->
+
+		</div>
+	</div>
+
+
+</header>
+
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+			<section class="sect__products product-bg gutters ">
+				<div class="container">
+					<h1 class="page-title products__title">Products & Drinks</h1>
+
+					<div class="products">
+						<article class="product --fruity-color" id="rumPunch">
+							<div class="product-img">
+								<img src="img/products/1.png" alt="">
+							</div>
+							<div class="product-content">
+								<h2 class="product-title">Rum Punch</h2>
+								<p>Made with spiced rum and tropical fruit flavors, this rum punch’s palate has a gentle and enjoyable flavor. Ginger notes add a sweet Calipso character, balanced by a hint of lime juice.  Rum with Natural Flavors</p>
+							</div>
+						</article>
+						<!-- //product -->
+
+						<article class="product --fresh-color" id="sunriseMimosa">
+							<div class="product-img">
+								<img src="img/products/2.png" alt="">
+							</div>
+							<div class="product-content">
+								<h2 class="product-title">Sunrise mimosa</h2>
+								<p>Made with spiced rum and tropical fruit flavors, this rum punch’s palate has a gentle and enjoyable flavor. Ginger notes add a sweet Calipso character, balanced by a hint of lime juice.  Rum with Natural Flavors</p>
+							</div>
+						</article>
+						<!-- //product -->
+
+						<article class="product --mint-color" id="mojito">
+							<div class="product-img">
+								<img src="img/products/3.png" alt="">
+							</div>
+							<div class="product-content">
+								<h2 class="product-title">Mojito</h2>
+								<p>Made with spiced rum and tropical fruit flavors, this rum punch’s palate has a gentle and enjoyable flavor. Ginger notes add a sweet Calipso character, balanced by a hint of lime juice.  Rum with Natural Flavors</p>
+							</div>
+						</article>
+						<!-- //product -->
+					</div>
+				
+
+				</div>
+				<!-- //container -->
+			</section>
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		<footer class="footer ">
+	<div class="footer-line">
+		<img src="img/decors/noindex_footer-line.png" alt="">
+	</div>
+
+	<div class="footer-content accent-gradient-bg">
+		<div class="container">
+			<div class="row row-gutters footer__row align-vertical-center row-nowrap">
+				<div class="footer-col col-gutters footer-col__text">
+					<div class="footer-text">
+						<p>(C) 2021 Tipsy Lady, LLC. |<br>Tipsy Lady® is a registered trademark of Tipsy Lady, LLC.</p>
+						<p>Please drink responsibly.</p>
+					</div>
+				</div>
+				<!-- //footer col -->
+				<div class="footer-col col-gutters footer-col__nav">
+					<nav class="nav">
+						<ul>
+							<li><a href="page-terms.html">Terms & condition</a></li>
+							<li><a href="page-privacy.html">Privacy</a></li>
+							<li><a href="page-responsibly.html">Drink responsibly</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- //footer col -->
+				<div class="footer-col col-gutters footer-col__logo">
+					<div class="footer-logo">
+						<a href="index.html" class="logo">
+							<img src="img/logo.svg" alt="Tipsy Lady Logo">
+						</a>
+
+						<div class="footer-logo__img">
+							<img src="img/footer-img.png" alt="">
+						</div>
+					</div>
+				</div>
+				<!-- //footer col -->
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+</footer>
+
+		<!-- //Footer -->
+
+
+		
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	<!-- jQuery IF NEEDED-->
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<!-- Main file with scripts -->
+<script src="js/common.min.js"></script>
+
+</body>
+
+</html>
