@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <!-- Add is-fixed class by default to homepage -->
+
+<script>
+	
+	document.addEventListener('DOMContentLoaded', function() {
+		var ageCheckerKey = localStorage.getItem('ageChecker');
+
+		var ageCheckerBlock = document.querySelector('.age-checker');
+
+		var html = document.querySelector("html")
+
+		if (ageCheckerKey) {
+
+			if (ageCheckerBlock) {
+				ageCheckerBlock.remove();
+			}
+		
+
+			if (html.classList.contains('is-fixed')) {
+				html.classList.remove('is-fixed');
+				document.querySelector('.content__wrapper').classList.add('is-opened');
+			}
+			
+		}
+	});
+
+</script>
 <html lang="en" class="is-fixed">
 <head>
 	<title>Tipsy Lady</title>
@@ -95,6 +121,8 @@
 		}
 
 	</style>
+
+	
 
 	<div class="age-checker__block text-center basic-white-color">
 		<p class="age-checker__title">Are you already<br>21 years old?</p>

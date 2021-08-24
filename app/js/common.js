@@ -3,9 +3,14 @@ $(document).ready(function() {
 	$('.js-accept-age-btn').on('click', function(e) {
 		e.preventDefault();
 
+		localStorage.setItem('ageChecker', true);
+		
 		$(this).parents('.age-checker').stop().hide();
 
+
+
 		$('html').removeClass('is-fixed');
+
 		$('.content__wrapper').addClass('is-opened');
 		$('.promo-block__img').addClass('is-animated');
 	});
