@@ -244,10 +244,12 @@ $(document).ready(function() {
 	// });
 
 
-	$('.contacts-form .wpcf7-form').on('submit', function(e) {
+
+
+	$('.contacts-form .wpcf7-form').on('wpcf7submit', function(e) {
 		var self = $(this),
-			inputs = self.find('.wpcf7-form-control.js-required-input'),
-			flag = true;
+				inputs = self.find('.wpcf7-validates-as-required'),
+				flag = true;
 
 		// Validate
 		$(inputs).each(function() {
@@ -259,9 +261,14 @@ $(document).ready(function() {
 
 		if(!flag) {return false;}
 
-		self.trigger("reset");
-		window.location.href = '/thanks';
+		
 
+	});
+
+
+	$('.wpcf7-form').on('wpcf7mailsent', function(e) {
+
+		window.location.href = '/thanks';
 	});
 
 
